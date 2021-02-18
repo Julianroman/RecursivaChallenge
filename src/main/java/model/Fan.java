@@ -9,14 +9,13 @@ public class Fan {
 	private Team team;
 	private String civilStatus;
 	private String study;
-	private FanRepository fanRepository;
-
+	
 	public Fan(String name, int age, Team team, String civilStatus, String study) {
 		this.setName(name);
 		this.setAge(age);
 		this.setTeam(team);
 		this.setCivilStatus(civilStatus);
-		this.setStudy(study);
+		this.setStudies(study);
 		
 		FanRepository.getInstance().addMember(this);
 	}
@@ -56,11 +55,11 @@ public class Fan {
 		this.civilStatus = civilStatus;
 	}
 
-	public String getStudy() {
+	public String getStudies() {
 		return study;
 	}
 
-	public void setStudy(String study) {
+	public void setStudies(String study) {
 		this.study = study;
 	}
 	

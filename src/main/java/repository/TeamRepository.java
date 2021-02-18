@@ -28,4 +28,7 @@ public class TeamRepository {
 	public int getQuantityTeams() {
 		return this.team.size();
 	}
+	
+	
+	
 }

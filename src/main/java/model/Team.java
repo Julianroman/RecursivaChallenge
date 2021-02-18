@@ -25,7 +25,18 @@ public class Team {
 	public void setName(String name) {
 		this.name = name;
 	}
+
+	public List<Fan> getFans() {
+		return fans;
+	}
+
+	public void setFans(List<Fan> fans) {
+		this.fans = fans;
+	}
 	
+	public int getQuantityMembers() {
+		return this.fans.size();
+	}
 	
 
 }
